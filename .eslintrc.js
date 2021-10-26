@@ -31,6 +31,14 @@ module.exports = {
     'react/prop-types': 'off',
     'spaced-comment': ['error', 'always', { markers: ['/ <reference'] }],
     'prettier/prettier': 'error',
+    'jsx-a11y/label-has-for': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
   },
   settings: {
     'import/resolver': {

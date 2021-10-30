@@ -1,10 +1,4 @@
-import React, {
-  FC,
-  Dispatch,
-  useState,
-  SetStateAction,
-  ChangeEvent,
-} from 'react';
+import React, { Dispatch, useState, SetStateAction, ChangeEvent } from 'react';
 import { Task } from './Types';
 
 type Props = {
@@ -12,7 +6,7 @@ type Props = {
   tasks: Task[];
 };
 
-const TaskInput: FC<Props> = ({ setTasks, tasks }) => {
+const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
   const [inputTitle, setInputTitle] = useState<string>('');
   const [count, setCount] = useState<number>(tasks.length + 1);
 

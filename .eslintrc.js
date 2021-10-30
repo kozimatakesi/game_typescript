@@ -32,6 +32,7 @@ module.exports = {
     'spaced-comment': ['error', 'always', { markers: ['/ <reference'] }],
     'prettier/prettier': 'error',
     'jsx-a11y/label-has-associated-control': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
   settings: {
     'import/resolver': {

@@ -1,10 +1,11 @@
+import { Box, Text } from '@chakra-ui/layout';
 import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <div>
-      <h1>このページについて</h1>
-    </div>
+    <Box h="100%">
+      <Text>このページについて</Text>
+    </Box>
   );
 };
 

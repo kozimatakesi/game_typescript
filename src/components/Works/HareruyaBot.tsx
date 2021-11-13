@@ -1,58 +1,50 @@
 import { Box } from '@chakra-ui/layout';
-import { Image, Badge } from '@chakra-ui/react';
+import { Image, Badge, Link } from '@chakra-ui/react';
 import React from 'react';
 import hareruyaBotImage from '../../images/hareruya-bot-image.png';
 
 const HareruyaBot: React.FC = () => {
   const property = {
+    githubUrl: 'https://github.com/kozimatakesi/hareruya-bot',
     imageUrl: hareruyaBotImage,
     imageAlt: 'Rear view of modern home with pool',
-    beds: 3,
-    baths: 2,
-    title: 'Modern home in city center in the heart of historic Los Angeles',
-    formattedPrice: '$1,900.00',
-    reviewCount: 34,
-    rating: 4,
+    title: '晴れる屋買取価格調査LINE Bot',
+    explanation:
+      'スクレイピングを用いて、晴れる屋サイトからカードの買取価格を教えてくれるLINE Bot',
   };
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image src={property.imageUrl} alt={property.imageAlt} />
+    <Box
+      maxW="sm"
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+      mt="30"
+    >
+      <Link href={property.githubUrl} isExternal>
+        <Image src={property.imageUrl} alt={property.imageAlt} />
 
-      <Box p="6">
-        <Box display="flex" alignItems="baseline">
-          <Badge borderRadius="full" px="2" colorScheme="teal">
-            New
-          </Badge>
+        <Box p="6">
+          <Box display="flex" alignItems="baseline">
+            <Badge borderRadius="full" px="2" colorScheme="teal">
+              js
+            </Badge>
+          </Box>
+
           <Box
-            color="gray.500"
+            mt="1"
             fontWeight="semibold"
-            letterSpacing="wide"
-            fontSize="xs"
-            textTransform="uppercase"
-            ml="2"
+            fontSize="2xl"
+            as="h4"
+            lineHeight="tight"
+            isTruncated
           >
-            {property.beds} beds &bull; {property.baths} baths
+            {property.title}
           </Box>
-        </Box>
 
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          isTruncated
-        >
-          {property.title}
+          <Box fontSize="sm">{property.explanation}</Box>
         </Box>
-
-        <Box>
-          {property.formattedPrice}
-          <Box as="span" color="gray.600" fontSize="sm">
-            / wk
-          </Box>
-        </Box>
-      </Box>
+      </Link>
     </Box>
   );
 };

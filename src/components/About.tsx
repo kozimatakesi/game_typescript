@@ -69,7 +69,9 @@ const About: React.FC = () => {
               <Td>2020/10</Td>
               <Td>
                 <Text>
-                  <Link href="https://devcranes.com/">DevClanes</Link>
+                  <Link href="https://devcranes.com/" isExternal>
+                    DevClanes
+                  </Link>
                   に加入、Javascriptの学習
                 </Text>
               </Td>

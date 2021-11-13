@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       top={0}
       position="sticky"
       zIndex="sticky"
-      h="35"
+      h="5vh"
     >
       <Flex SystemProps="justifyContent">
         <Box px="4" py="2">

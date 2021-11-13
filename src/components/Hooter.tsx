@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Link } from '@chakra-ui/layout';
+import { Box, Container, Link } from '@chakra-ui/layout';
 
 const Hooter: React.FC = () => {
   return (
@@ -8,11 +8,13 @@ const Hooter: React.FC = () => {
       bottom={0}
       position="sticky"
       zIndex="sticky"
-      h="5%"
+      h="5vh"
     >
-      <Link href="https://chakra-ui.com">Chakra UI</Link>
-      <Link href="https://chakra-ui.com">Chakra UI</Link>
-      <Link href="https://chakra-ui.com">Chakra UI</Link>
+      <Container>
+        <Link href="https://chakra-ui.com">Chakra UI</Link>
+        <Link href="https://chakra-ui.com">Chakra UI</Link>
+        <Link href="https://chakra-ui.com">Chakra UI</Link>
+      </Container>
     </Box>
   );
 };

@@ -5,7 +5,6 @@ import About from './components/About';
 import Header from './components/Header';
 import Home from './components/Home';
 import Work from './components/Work';
-import Hooter from './components/Hooter';
 import homePage from './images/tech-g19c066f07_1920.jpg';
 
 const App: React.FC = () => {
@@ -20,7 +19,6 @@ const App: React.FC = () => {
             <Route path="/work" component={Work} />
           </Switch>
         </BrowserRouter>
-        <Hooter />
       </Box>
     </ChakraProvider>
   );

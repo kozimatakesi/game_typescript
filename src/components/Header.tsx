@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           <Link href="/about">ABOUT</Link>
         </Box>
         <Box px="4" py="2">
-          <Link href="/work">WORK</Link>
+          <Link href="/work">WORKS</Link>
         </Box>
         <Box px="4" py="2" fontSize="2xl">
           <Link href="https://twitter.com/gqtwomNZddivyVq" isExternal>

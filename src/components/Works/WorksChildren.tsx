@@ -21,7 +21,8 @@ const WorksChildren: React.FC<Works> = ({
 }) => {
   return (
     <Box
-      maxW="sm"
+      mx={{ base: 'auto', md: '1' }}
+      maxW="md"
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"

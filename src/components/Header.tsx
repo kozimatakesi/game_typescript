@@ -6,12 +6,14 @@ import { AiFillTwitterCircle, AiFillGithub } from 'react-icons/ai';
 const Header: React.FC = () => {
   return (
     <Box
-      px="10"
+      px={{ md: '10' }}
       top={0}
       position="sticky"
       zIndex="sticky"
       h="5vh"
       color="white"
+      opacity="0.8"
+      backgroundColor="blue.800"
     >
       <Flex SystemProps="justifyContent">
         <Box px="4" py="2">

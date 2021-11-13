@@ -5,7 +5,7 @@ import React from 'react';
 const About: React.FC = () => {
   return (
     <Box h="100%" color="white">
-      <Container>
+      <Container maxW="container.md">
         <Text fontSize="5xl" color="blue.300">
           Carrier
         </Text>

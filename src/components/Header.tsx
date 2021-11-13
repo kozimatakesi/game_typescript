@@ -22,7 +22,7 @@ const Header: React.FC = () => {
         </Box>
         <Spacer />
         <Box px="4" py="2">
-          <Link href="/todo">SKILL</Link>
+          <Link href="/skill">SKILL</Link>
         </Box>
       </Flex>
     </Box>

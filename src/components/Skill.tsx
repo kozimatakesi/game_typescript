@@ -2,7 +2,7 @@ import { Box, Container, Text } from '@chakra-ui/layout';
 import { Table, Tbody, Tfoot, Thead, Tr, Th, Td, Link } from '@chakra-ui/react';
 import React from 'react';
 
-const About: React.FC = () => {
+const Skill: React.FC = () => {
   return (
     <Box h="100%" color="white">
       <Container>
@@ -82,4 +82,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Skill;

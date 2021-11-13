@@ -1,6 +1,7 @@
 import { Box, Container, Text } from '@chakra-ui/layout';
 import React from 'react';
-import HareruyaBot from './Works/HareruyaBot';
+import WorksChildren from './Works/WorksChildren';
+import hareruya from '../images/hareruya-bot-image.png';
 
 const Work: React.FC = () => {
   return (
@@ -10,7 +11,14 @@ const Work: React.FC = () => {
           Work
         </Text>
 
-        <HareruyaBot />
+        <WorksChildren
+          githubUrl="https://github.com/kozimatakesi/hareruya-bot"
+          imageUrl={hareruya}
+          imageAlt="Rear view of modern home with pool"
+          title="晴れる屋買取価格調査LINE Bot"
+          explanation="スクレイピングを用いて、晴れる屋サイトからカードの買取価格を教えてくれるLINE Bot"
+          skills={['js']}
+        />
       </Container>
     </Box>
   );
